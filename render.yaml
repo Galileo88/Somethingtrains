@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: stormrail-prototype
+    runtime: static
+    rootDir: stormrail-prototype
+    buildCommand: "echo 'No build required for static prototype'"
+    staticPublishPath: .
+    pullRequestPreviewsEnabled: true
+    routes:
+      - type: rewrite
+        source: /
+        destination: /public/index.html
