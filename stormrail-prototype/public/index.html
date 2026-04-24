@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Stormrail</title>
+  <link rel="stylesheet" href="../src/styles.css">
+</head>
+<body>
+  <main id="app">
+    <canvas id="game" aria-label="Stormrail route view"></canvas>
+
+    <section id="panel">
+      <header>
+        <p id="date">Day 1</p>
+        <h1>Stormrail</h1>
+        <p id="location">Atlanta Prison Depot</p>
+      </header>
+
+      <div id="meters">
+        <p>Fuel <span id="fuel"></span></p>
+        <p>Food <span id="food"></span></p>
+        <p>Water <span id="water"></span></p>
+        <p>Parts <span id="parts"></span></p>
+        <p>Morale <span id="morale"></span></p>
+        <p>Cargo <span id="cargo"></span></p>
+        <p>Engine <span id="engine"></span></p>
+        <p>Crew <span id="crew"></span></p>
+      </div>
+
+      <article id="event">
+        <h2 id="event-title">Choose your crew</h2>
+        <p id="event-body">The train is assigned. The cargo is sealed. Before leaving Atlanta, choose three people to ride with you.</p>
+      </article>
+
+      <div id="actions">
+        <button id="action-a" type="button">Select</button>
+        <button id="action-b" type="button">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="../src/main.js"></script>
+</body>
+</html>
